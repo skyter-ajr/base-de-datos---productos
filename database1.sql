@@ -14,3 +14,11 @@ create table inventario(
 insert into inventario (producto, cantidad_kg, codigo_producto) values(1, 'harina', 10, 'h1we8hi23');
 
 select * from inventario;
+create table cliente(
+    sp_id int (5) not null auto_increment,
+    nombre varchar (25),
+    edad int (2),
+    cedula int (10),
+    primary key (sp_id)
+)engine=innodb;
+select * from cliente;

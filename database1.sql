@@ -22,7 +22,7 @@ create table inventario(
     primary key (pk_id),
     foreign key (fk_cliente) references cliente (pk_id),
 ) engine=innodb;
-insert into inventario (producto, cantidad_kg, codigo_producto) values('harina', 10, 'h1we8hi23');
+insert into inventario (producto, cantidad_kg, codigo_producto) values('+++++', 10, 'h1we8hi23');
 
 select * from inventario;
 select * from cliente;

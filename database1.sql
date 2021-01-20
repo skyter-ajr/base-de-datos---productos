@@ -11,7 +11,7 @@ create table cliente(
     cedula int (10),
     primary key (sp_id)
 )engine=innodb;
-insert into cliente(nombre, edad, cedula) values('*****', 40, 2219841274);
+insert into cliente(nombre, edad, cedula) values('*****', 40, 22198412);
 
 create table inventario(
     pk_id int (5) not null auto_increment,
@@ -22,7 +22,6 @@ create table inventario(
     primary key (pk_id),
     foreign key (fk_cliente) references cliente (pk_id),
 ) engine=innodb;
-insert into inventario (producto, cantidad_kg, codigo_producto) values('+++++', 10, 'h1we8hi23');
+insert into inventario (producto, cantidad_kg, codigo_producto) values('harina', 10, 'h1we8hi23');
 
-select * from inventario;
-select * from cliente;
+select * from inventario i inner join cliente;

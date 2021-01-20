@@ -24,4 +24,4 @@ create table inventario(
 ) engine=innodb;
 insert into inventario (producto, cantidad_kg, codigo_producto) values('harina', 10, 'h1we8hi23');
 
-select * from inventario i inner join cliente;
+select * from inventario i inner join cliente c on i.sp_id=c.pk_id;
